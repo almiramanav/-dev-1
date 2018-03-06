@@ -1,0 +1,8 @@
+x=int(input("Satış Miktarı: "))
+y=int(input("Birim Satış Fiyatı: "))
+z=25
+def adamBasiciro():
+    sonuc=x*y/z
+    print(sonuc)
+    return sonuc
+adamBasiciro()
