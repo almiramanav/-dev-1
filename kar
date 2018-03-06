@@ -1,0 +1,20 @@
+print("Şirket karını hesaplamak için değerlerinizi giriniz: ")
+
+finansmanGelir=int(input("Finansman Geliri: "))
+pazarGelir=int(input("Pazar Geliri: "))
+kiraGelir=int(input("Kira Geliri: "))
+
+ucret=int(input("Ücret Gideri: "))
+finansmanGider=int(input("Ücret Gideri: "))
+pazarGider=int(input("Pazar Gideri: "))
+kiraGider=int(input("Kira Gideri: "))
+muhasebeGider=int(input("Muhasebe Gideri: "))
+
+gelir=finansmanGelir+pazarGelir+kiraGelir
+gider=ucret+finansmanGider+pazarGider+kiraGider+muhasebeGider
+kar=gelir-gider
+
+if kar>1000:
+    print("Tebrikler! Karlı bir dönem geçirdiniz. ")
+else:
+    print("Şirketiniz zarar etmiştir. ")
